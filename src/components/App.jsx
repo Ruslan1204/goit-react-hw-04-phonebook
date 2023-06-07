@@ -12,7 +12,7 @@ const localContacts = [
   { id: 'id-4', name: 'Annie Copeland', number: '227-91-26' },
 ];
 
-export const App = ({name, number}) => {
+export const App = () => {
   const [contacts, setContacts] = useState(JSON.parse(localStorage.getItem('contacts')) || localContacts); //
   const [filter, setFilter] = useState('');
 
